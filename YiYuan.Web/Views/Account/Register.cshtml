@@ -88,7 +88,7 @@
                 <div class="headimg j-headimg"></div>
             </div>
             <div class="m-cnt">
-                <form id="login-form" action="Login">
+                <form id="register-form" action="Register" method="post">
 
                     <div class="m-container" id="Div1">
                         <div class="inputbox" id="account-box">
@@ -147,11 +147,11 @@
             <div class="m-sep">
                 <div class="leftsep f-fl"></div>
                 <div class="rightsep f-fr"></div>
-                <div class="centertext">网易用户中心</div>
+                <div class="centertext"></div>
             </div>
             <div class="m-footer" id="footer">
                 <div class="f-cb">
-                    <p class="f-fl tip m-sep">您还没有网易邮箱帐号？</p>
+                    <p class="f-fl tip m-sep">您还没有帐号？</p>
                     <p class="f-fr"><a class="btn-qrcode j-btnqrcode f-dn"></a></p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
     </div>
 
     <script type="text/javascript">
-        var _gaq = _gaq || [];
+        var _gaq = _gaq || k
         var _key = wdaId || 'UA1438236666413';
         _gaq.push(['_setAccount', _key], ['_setLocalGifPath', '/' + _key + '/__utm.gif'], ['_setLocalServerMode']);
         _gaq.push(['_addOrganic', 'baidu', 'word']); _gaq.push(['_addOrganic', 'soso', 'w']); _gaq.push(['_addOrganic', 'youdao', 'q']);
@@ -173,7 +173,14 @@
     </script>
     <script src="../../webapp/javascript/c.js?v=160920"></script>
     <script src="../s/pp_index.js?8795c9dea944aef7eb18eca5a0a9e14d"></script>
-
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <script>
+        $(function () {
+            $("#dologin").click(function () {
+                $("#register-form").submit();
+            });
+        });
+    </script>
 
     @*    <iframe frameborder="0" id="id-1474939162528" style="position: absolute; width: 0px; height: 0px;" src="https://dl.reg.163.com/src/mp-agent-finger.html?v=160325"></iframe>*@
 </body>
