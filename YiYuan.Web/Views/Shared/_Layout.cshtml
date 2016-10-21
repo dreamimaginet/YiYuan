@@ -49,14 +49,21 @@
                         @*    <span class="vertical-split-line">|</span>*@
                     </li>
                 </ul>
-                <div id="topNavLeft"></div>
+                <div id="topNavLeft">
+                    @if(1!=1){
+                    <span class="welcome-txt">欢迎来到网易1元购！</span><span class="login-url nickname"><a href="http://888.163.com/user">distinctiveangle@163.com</a></span><a href="http://reg.163.com/Logout.jsp?url=http%3A%2F%2F888.163.com%2Findex.html">[退出]</a>
+                    }else{
+                    <span class="welcome-txt">欢迎来到网易1元购！</span><span class="login-url"><a href="#login()">请登录</a></span><span class="vertical-split-line">|</span><span class="reg-url"><a href="#reg()">免费注册</a></span>
+                    }
+
+                </div>
             </div>
         </nav>
         <div id="logoComponent">
             <h1>网易一元购</h1>
             <span class="logo">
                 <a href="/">
-                    <img src="http://pimg1.126.net/yyg/.remote/duobao/src/desktop/core/img/header01.png" alt="">
+                    <img src="" alt="">
                 </a>
             </span>
             <span class="qrcode">
@@ -106,15 +113,16 @@
                     <a href="/product/index/10">十元专区</a>
                 </li>
 
-                @*<li pid="anc-latest" class="tab-item">
-                        <a href="/results/" target="_blank">最新揭晓</a>
-                    </li>
-                    <li pid="show-award" class="tab-item">
-                        <a href="/share/" target="_blank">晒单分享</a>
-                    </li>
-                    <li pid="download" class="tab-item">
-                        <a href="/app/" target="_blank">手机客户端</a>
-                    </li>*@
+                @*
+                <li pid="anc-latest" class="tab-item">
+                    <a href="/results/" target="_blank">最新揭晓</a>
+                </li>
+                <li pid="show-award" class="tab-item">
+                    <a href="/share/" target="_blank">晒单分享</a>
+                </li>
+                <li pid="download" class="tab-item">
+                    <a href="/app/" target="_blank">手机客户端</a>
+                </li>*@
             </ul>
         </nav>
     </header>
@@ -209,7 +217,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @* <script src="~/Scripts/core.js"></script>*@
+    @*
+    <script src="~/Scripts/core.js"></script>*@
     @RenderSection("scripts", required: false)
     <script>
 

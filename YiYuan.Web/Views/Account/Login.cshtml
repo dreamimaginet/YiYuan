@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "登录";
     Layout = null;
 }
@@ -89,7 +88,8 @@
                 <div class="headimg j-headimg"></div>
             </div>
             <div class="m-cnt">
-                <form id="login-form">
+                <form id="login-form" action="Login">
+
                     <div class="m-container" id="Div1">
                         <div class="inputbox" id="account-box">
                             <div class="u-logo">
@@ -115,39 +115,6 @@
                                 <div class="u-success u-clear"></div>
                             </div>
                         </div>
-                        <div class="ckbox m-ckcnt f-cb f-dn">
-                            <div class="inputbox ckin">
-                                <div class="u-input">
-                                    <label class="u-label f-dn" id="Label3" style="display: block;">验证码</label><input data-placeholder="验证码" name="checkcode" class="j-inputtext cktext" type="text" data-required="true" data-max-length="6" maxlength="4" data-pattern="^[0-9a-zA-Z]{4,6}$" tabindex="3" spellcheck="false" id="Text2" placeholder="验证码">
-                                </div>
-                                <div class="u-tip" id="Div7" style="display: none;">
-                                    <div class="u-success u-clear"></div>
-                                </div>
-                                <div class="u-tip">
-                                    <div class="u-success u-suc"></div>
-                                </div>
-                            </div>
-                            <div class="inputbox ckimgbox f-fr">
-                                <img class="ckimg" title="点击刷新验证码" alt="点击获取验证码" onerror="this.src=this.src" id="Img1">
-                            </div>
-                        </div>
-                        <div class="ckbox m-ckcnt slidebox f-cb" style="position: relative; z-index: 19;" id="Div8">
-                            <div class="ScapTcha slideBg-slider slideBg-slider-horizontal" id="ScapTcha">
-                                <div class="puzzleBg" style="bottom: 44px; display: none;">
-                                    <img src="http://nos.netease.com/nisp-captcha/1470915712061_78045947?NOSAccessKeyId=0356d3406e0d421389bcbb5c28b59c39&Expires=1474946092&Signature=HvQ0S6Bn019av2xEWNmYOGbAwxG7%2F5i8JJn%2BfXh5VDQ%3D" style="width: 320px; height: auto; border-radius: 8px;"><div class="puzzleFg" style="left: 7px;">
-                                        <img src="http://nos.netease.com/nisp-captcha/1470918661223_1021633587?NOSAccessKeyId=0356d3406e0d421389bcbb5c28b59c39&amp;Expires=1474939909&amp;Signature=p61t1%2FwLFd7sBbRiQ5pEw3o7uyl7lShrg6nFv8gDxhI%3D" style="width: 60px; height: auto;">
-                                    </div>
-                                </div>
-                                <div class="slideBg" id="Div9" style="width: 320px; height: 32px; border-radius: 16px;">
-                                    <div class="slideFg" id="Div10" style="left: 1px;">
-                                        <img src="http://captcha.reg.163.com/v1_5/images/slider.png" id="Img2" style="height: auto; width: 72px;">
-                                    </div>
-                                    <div class="hintTxt" id="Div11" style="line-height: 32px; left: 36px; position: relative; opacity: 1;">按住滑块，拖动完成上方拼图</div>
-                                </div>
-                                <div class="statusTxt" style="height: 32px; margin-left: 332px; line-height: 32px;"></div>
-                            </div>
-                            <input type="hidden" id="pwd" value=""><input name="slidecap" style="height: 0; width: 0; display: none;" type="text" data-required="true" value="" id="Text3">
-                        </div>
                         <div class="m-etbox" style="display: none;">
                             <div class="ettip">
                                 <div class="etimgbox">
@@ -164,10 +131,11 @@
                                     <input id="un-login" type="checkbox" name="un-login" class="un-login">
                                 </span><label for="un-login">十天内免登录</label>
                             </div>
-                            <a class="forgetpwd j-redirect" data-outlink="1" href="http://reg.163.com/resetpwd/index.do" target="_blank" id="a1">忘记密码？</a><a id="changepage" data-action="changepage" class="u-regbtn bgcolor tabfocus j-redirect" href="javascript:void(0);" data-outlink="2" target="_self" tabindex="11">去注册</a>
+                            <a class="forgetpwd j-redirect" data-outlink="1" href="http://reg.163.com/resetpwd/index.do" target="_blank" id="a1">忘记密码？</a>
+                            <a id="changepage" data-action="changepage" class="u-regbtn bgcolor tabfocus j-redirect" href="javascript:void(0);" data-outlink="2" target="_self" tabindex="11">去注册</a>
                         </div>
                         <div class="m-ologin">
-                            <div class="otip f-fl">其他方式登录</div>
+                            @*  <div class="otip f-fl">其他方式登录</div>*@
                             <div class="olist" id="Div12"><a data-width="" data-height="" data-outlink="1" data-link="http://reg.163.com/outerLogin/oauth2/connect.do?product=yiyuangou&amp;target=1&amp;url=http%3A%2F%2Fwebzj.reg.163.com%2Fwebapp%2Fres%2Fstatichtml%2Fthird.html&amp;url2=http%3A%2F%2Fwebzj.reg.163.com%2Fwebapp%2Fres%2Fstatichtml%2Fthird.html" class="f-cb f-fl third qq j-redirect" href="javascript:void(0);"></a><a data-width="" data-height="" data-outlink="1" data-link="http://reg.163.com/outerLogin/oauth2/connect.do?product=yiyuangou&amp;target=13&amp;url=http%3A%2F%2Fwebzj.reg.163.com%2Fwebapp%2Fres%2Fstatichtml%2Fthird.html&amp;url2=http%3A%2F%2Fwebzj.reg.163.com%2Fwebapp%2Fres%2Fstatichtml%2Fthird.html" class="f-cb f-fl third weixin j-redirect" href="javascript:void(0);" id="a2"></a></div>
                         </div>
                     </div>
@@ -203,7 +171,8 @@
     <script src="../../webapp/javascript/c.js?v=160920"></script>
     <script src="../s/pp_index.js?8795c9dea944aef7eb18eca5a0a9e14d"></script>
 
-    <iframe frameborder="0" id="id-1474939162528" style="position: absolute; width: 0px; height: 0px;" src="https://dl.reg.163.com/src/mp-agent-finger.html?v=160325"></iframe>
+
+@*    <iframe frameborder="0" id="id-1474939162528" style="position: absolute; width: 0px; height: 0px;" src="https://dl.reg.163.com/src/mp-agent-finger.html?v=160325"></iframe>*@
 </body>
 </html>
 

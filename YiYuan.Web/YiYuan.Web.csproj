@@ -181,11 +181,14 @@
     <Compile Include="WebCommon.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\97f27914d41f80aa.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\core.308600814a.css" />
     <Content Include="Content\core.css" />
+    <Content Include="Content\index.481bd47214.css" />
     <Content Include="Content\index.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\oneyuan_css.css" />
@@ -241,6 +244,7 @@
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Scripts\_references.js" />
+    <None Include="Views\Product\Detail.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -263,17 +267,17 @@
     <Content Include="Views\Help\Pay.cshtml" />
     <Content Include="Views\Help\DistributionCost.cshtml" />
     <Content Include="Views\Help\Signin.cshtml" />
-    <Content Include="Views\Product\Detail.cshtml" />
+    <Content Include="Views\Product\Detail2.cshtml" />
     <Content Include="Views\App\Index.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Product\Sort.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
